@@ -320,7 +320,7 @@ body.about section p {
     border: none;
     border-radius: 5px;
     background-color: #FF7b47;
-    color: transparent;
+    color: whitesmoke;
     transition: background-color 0.3s;
 }
 
