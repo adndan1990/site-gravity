@@ -202,8 +202,8 @@ footer {
 
 /* Taille uniforme pour toutes les vidéos */
 .youtube-video iframe {
-    flex: 1 1 320px;      /* légèrement plus large pour YouTube */
-    max-width: 380px;
+    flex: 1 1 640px;      /* légèrement plus large pour YouTube */
+    max-width: 760px;
     height: 220px;
     display: block;
     border-radius: 15px;
