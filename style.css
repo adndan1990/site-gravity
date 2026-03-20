@@ -275,21 +275,22 @@ body.about section {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    gap: 80px; /* augmenté pour plus d'espace entre les boxes */
+    gap: 80px; /* espace entre les boxes */
+    padding: 40px 0; /* pour plus de respiration verticale */
 }
 
 body.about section p {
     text-align: center;
-    padding: 30px 40px;
+    padding: 40px 50px; /* plus de place pour le texte */
     color: #FF7b47;
-    max-width: 500px;
+    max-width: 700px; /* plus large pour le texte */
     width: 100%;
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
 
     background-color: transparent;
-    border: 3px solid #FF7b47;
+    border: 3px solid #FFD700; /* jaune pour l'étoile */
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 
         68% 57%, 79% 91%, 50% 70%, 
@@ -297,26 +298,27 @@ body.about section p {
         39% 35%
     );
     
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    /* étoile luisante */
+    box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* hover pour un petit effet */
+/* hover pour effet interactif */
 body.about section p:hover {
     transform: scale(1.05);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 0 25px #FFD700, 0 0 35px #FFD700, 0 0 50px #FFD700;
     cursor: pointer;
 }
 
 /* responsive pour petits écrans */
 @media (max-width: 600px) {
     body.about section {
-        gap: 50px;
+        gap: 60px;
     }
 
     body.about section p {
         max-width: 90%;
         font-size: 1rem;
-        padding: 20px 25px;
+        padding: 25px 30px;
     }
 }
