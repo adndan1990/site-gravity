@@ -268,21 +268,6 @@ footer {
     color: #fff;
     border-color: #FFA65C;
 }
-body.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-body.about section {
-    display: flex;
-    flex-direction: column; /* empile verticalement */
-    align-items: center;    /* centre horizontalement */
-    justify-content: center;
-    gap: 60px;              /* espace entre les boxes */
-}
 
 body.about section p {
     text-align: center;
@@ -293,35 +278,5 @@ body.about section p {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
-
-    background-color: rgba(0, 0, 0, 0.5); /* fait ressortir le contour */
-    border: 5px solid #FFD700; /* contour jaune plus visible */
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 
-        68% 57%, 79% 91%, 50% 70%, 
-        21% 91%, 32% 57%, 2% 35%, 
-        39% 35%
-    );
+}
     
-    box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* hover pour effet interactif */
-body.about section p:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #FFD700, 0 0 35px #FFD700, 0 0 50px #FFD700;
-    cursor: pointer;
-}
-
-/* responsive */
-@media (max-width: 600px) {
-    body.about section {
-        gap: 50px;
-    }
-    body.about section p {
-        max-width: 90%;
-        font-size: 1rem;
-        padding: 25px 30px;
-    }
-}
