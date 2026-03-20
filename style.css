@@ -167,8 +167,8 @@ h2 {
 
 /* PORTFOLIO */
 .portfolio iframe {
-    width: 320px;
-    height: 180px;
+    width: 340px; /* légèrement plus grande */
+    height: 200px; /* hauteur adaptée pour YouTube */
     margin: 15px;
     border-radius: 15px;
     transition: 0.3s;
@@ -201,13 +201,22 @@ footer {
 }
 
 /* Taille uniforme pour toutes les vidéos */
-.youtube-video iframe,
-.tiktok-video .tiktok-embed {
-    flex: 1 1 300px;      /* largeur minimale 300px, flexible si écran plus grand */
-    max-width: 360px;     /* largeur maximale */
-    height: 200px;        /* hauteur fixe uniforme */
+.youtube-video iframe {
+    flex: 1 1 320px;      /* légèrement plus large pour YouTube */
+    max-width: 380px;
+    height: 220px;
     display: block;
-    border-radius: 15px;  /* pour correspondre à ton style */
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.tiktok-video .tiktok-embed {
+    flex: 1 1 325px;
+    max-width: 500px;
+    width: 100%;
+    height: auto !important;
+    margin: 15px;
+    border-radius: 15px;
     transition: 0.3s;
 }
 
