@@ -281,10 +281,10 @@ body.about section {
 body.about section p {
     text-align: center;
     padding: 20px 0;       /* espace entre les paragraphes */
-    color: #FF7b47;
+    color: #f8f8f8;
     max-width: 700px;
     width: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
 }
