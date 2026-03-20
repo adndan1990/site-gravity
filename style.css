@@ -186,3 +186,32 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
+/* Container vidéos pour flex (YouTube et TikTok) */
+.youtube-video, .tiktok-video {
+    text-align: center; /* garde le titre centré */
+}
+
+.youtube-video .video-container,
+.tiktok-video .video-container {
+    display: flex;
+    flex-wrap: wrap;      /* passe à la ligne si écran trop petit */
+    justify-content: center;
+    gap: 15px;            /* espace entre les vidéos */
+}
+
+/* Taille uniforme pour toutes les vidéos */
+.youtube-video iframe,
+.tiktok-video .tiktok-embed {
+    flex: 1 1 300px;      /* largeur minimale 300px, flexible si écran plus grand */
+    max-width: 360px;     /* largeur maximale */
+    height: 200px;        /* hauteur fixe uniforme */
+    display: block;
+    border-radius: 15px;  /* pour correspondre à ton style */
+    transition: 0.3s;
+}
+
+.youtube-video iframe:hover,
+.tiktok-video .tiktok-embed:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ff00ff;
+}
