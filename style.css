@@ -288,4 +288,42 @@ body.about section p {
     font-size: 1.2rem;
     line-height: 1.8;
 }
-    
+    .contact-section {
+    display: flex;
+    flex-direction: column;   /* empile verticalement tous les éléments */
+    align-items: center;      /* centre horizontalement */
+    justify-content: center;
+    min-height: 100vh;        /* occupe toute la hauteur de la page */
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* optionnel : fond clair pour la section */
+}
+
+.contact-section p {
+    color: #FF7b47;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 15px 0;           /* espace entre les paragraphes */
+}
+
+.contact-section a {
+    margin: 10px 0;           /* espace entre les liens/boutons */
+}
+
+.contact-section a button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF7b47;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.contact-section a button:hover {
+    background-color: #e66a36; /* effet survol */
+}
