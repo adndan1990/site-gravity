@@ -268,3 +268,9 @@ footer {
     color: #fff;
     border-color: #FFA65C;
 }
+/* Paragraphes seulement pour index et about */
+body.home p,
+body.about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
