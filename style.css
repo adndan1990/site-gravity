@@ -272,17 +272,19 @@ footer {
 body.home section p,
 body.about section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;      /* empile les éléments verticalement */
+    align-items: center;         /* centre horizontalement chaque box */
     width: 100%;
+    gap: 25px;                   /* espace entre les boxes */
 }
 
 body.about section p {
-    text-align: center;         /* centre le texte à l'intérieur de la box */
+    text-align: center;          /* centre le texte à l'intérieur de la box */
     padding: 20px;
     border-radius: 12px;
-    color: #FF7b47;             /* couleur du texte */
-    border: 2px solid #FF7b47;  /* contour de la box */
+    color: #FF7b47;              /* couleur du texte */
+    border: 2px solid #FF7b47;   /* contour de la box */
     max-width: 700px;
+    width: 100%;                 /* permet à la box de s’adapter sur mobile */
     line-height: 2;
 }
