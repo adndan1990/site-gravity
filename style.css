@@ -225,7 +225,7 @@ footer {
 .tiktok-video .tiktok-embed {
     flex: 0 0 30%;             /* 3 vidéos par ligne → 30% de largeur chacune */
     max-width: 340px;          /* largeur max pour ne pas dépasser */
-    height: 440px;             /* même hauteur que YouTube */
+    height: 606px;             /* même hauteur que YouTube */
     border-radius: 15px;
     transition: 0.3s;
 }
