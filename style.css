@@ -274,9 +274,9 @@ body.about section p {
     text-align: center;
     margin-bottom: 25px;
     line-height: 2;
-    background-color: #FF7b47;
     padding: 20px;
     border-radius: 12px;
-    color: white;
+    color: #FF7b47; /* tu peux garder cette couleur pour le texte */
+    border: 2px solid #FF7b47; /* contour de la box */
     max-width: 700px;
 }
