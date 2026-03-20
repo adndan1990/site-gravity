@@ -20,10 +20,10 @@ body {
 h1, h2, h3 {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
-    background: linear-gradient(90deg, #FF7b47, #FFA500); /* dégradé orange foncé → clair */
+    background: linear-gradient(90deg, #FF7b47, #FFA65C); /* dégradé orange foncé → clair */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* permet au texte d’afficher le dégradé */
-    text-shadow: 0 0 10px rgba(255,140,0,0.5); /* effet lumineux subtil */
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255,123,71,0.6);
 }
 
 /* HEADER */
@@ -38,7 +38,7 @@ header {
 header h1 {
     font-size: 45px;
     color: #FF7b47;
-    text-shadow: 0 0 15px #ff48008c;
+    text-shadow: 0 0 15px rgba(255,123,71,0.6);
 }
 
 /* NAV */
@@ -75,7 +75,7 @@ nav a::after {
 
 nav a:hover {
     color: #FF7b47;
-    text-shadow: 0 0 10px #fffb00;
+    text-shadow: 0 0 10px rgba(255,123,71,0.7);
 }
 
 nav a:hover::after {
@@ -100,8 +100,8 @@ nav a:hover::after {
 
 .hero h2 {
     font-size: 65px;
-    color: #ff00ff;
-    text-shadow: 0 0 20px #ff00ff;
+    color: #FF7b47;
+    text-shadow: 0 0 20px rgba(255,123,71,0.7);
 }
 
 .hero p {
@@ -116,7 +116,7 @@ button {
     padding: 12px 30px;
     border: none;
     border-radius: 30px;
-    background: linear-gradient(90deg, #FF7b47, #ff00ff);
+    background: linear-gradient(90deg, #FF7b47, #FFA65C);
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -125,7 +125,7 @@ button {
 
 button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 25px #ff00ff;
+    box-shadow: 0 0 25px rgba(255,123,71,0.8);
 }
 
 /* SECTIONS */
@@ -140,7 +140,7 @@ h2 {
     font-size: 36px;
     margin-bottom: 40px;
     color: #FF7b47;
-    text-shadow: 0 0 10px #fffb00;
+    text-shadow: 0 0 10px rgba(255,123,71,0.7);
 }
 
 /* SERVICES */
@@ -163,11 +163,11 @@ h2 {
 
 .card:hover {
     transform: translateY(-12px) scale(1.05);
-    box-shadow: 0 0 25px #fffb00;
+    box-shadow: 0 0 25px rgba(255,123,71,0.7);
 }
 
 .card h3 {
-    color: #ff00ff;
+    color: #FF7b47;
 }
 
 /* PORTFOLIO */
@@ -181,7 +181,7 @@ h2 {
 
 .portfolio iframe:hover {
     transform: scale(1.08);
-    box-shadow: 0 0 30px #ff00ff;
+    box-shadow: 0 0 30px rgba(255,123,71,0.7);
 }
 
 /* FOOTER */
@@ -215,7 +215,7 @@ footer {
 
 .youtube-video iframe:hover {
     transform: scale(1.08);
-    box-shadow: 0 0 30px #ff00ff;
+    box-shadow: 0 0 30px rgba(255,123,71,0.7);
 }
 
 /* TikTok : vidéos 3 par ligne */
@@ -237,7 +237,7 @@ footer {
 
 .tiktok-video .tiktok-embed:hover {
     transform: scale(1.08);
-    box-shadow: 0 0 30px #ff00ff;
+    box-shadow: 0 0 30px rgba(255,123,71,0.7);
 }
 
 /* Pagination boutons */
@@ -251,7 +251,7 @@ footer {
     margin: 0 8px;
     cursor: pointer;
     border: 1px solid #FF7b47;
-    background: linear-gradient(90deg, #FF7b47, #ff00ff);
+    background: linear-gradient(90deg, #FF7b47, #FFA65C);
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
@@ -260,11 +260,11 @@ footer {
 
 .portfolio .pagination button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px #ff00ff;
+    box-shadow: 0 0 20px rgba(255,123,71,0.7);
 }
 
 .portfolio .pagination button.active {
-    background: #ff00ff;
+    background: #FFA65C;
     color: #fff;
-    border-color: #ff00ff;
+    border-color: #FFA65C;
 }
