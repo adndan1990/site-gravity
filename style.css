@@ -186,6 +186,7 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
+
 /* Container vidéos pour flex (YouTube et TikTok) */
 .youtube-video, .tiktok-video {
     text-align: center; /* garde le titre centré */
@@ -214,4 +215,33 @@ footer {
 .tiktok-video .tiktok-embed:hover {
     transform: scale(1.08);
     box-shadow: 0 0 30px #ff00ff;
+}
+
+/* Pagination boutons */
+.portfolio .pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.portfolio .pagination button {
+    padding: 10px 20px;
+    margin: 0 8px;
+    cursor: pointer;
+    border: 1px solid #00f7ff;
+    background: linear-gradient(90deg, #00f7ff, #ff00ff);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.portfolio .pagination button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+.portfolio .pagination button.active {
+    background: #ff00ff;
+    color: #fff;
+    border-color: #ff00ff;
 }
