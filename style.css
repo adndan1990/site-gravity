@@ -38,7 +38,7 @@ header {
 header h1 {
     font-size: 45px;
     color: #FF7b47;
-    text-shadow: 0 0 15px #fffb00;
+    text-shadow: 0 0 15px #ff48008c;
 }
 
 /* NAV */
@@ -74,7 +74,7 @@ nav a::after {
 }
 
 nav a:hover {
-    color: #00f7ff;
+    color: #FF7b47;
     text-shadow: 0 0 10px #fffb00;
 }
 
@@ -251,7 +251,7 @@ footer {
     margin: 0 8px;
     cursor: pointer;
     border: 1px solid #FF7b47;
-    background: linear-gradient(90deg, #00f7ff, #ff00ff);
+    background: linear-gradient(90deg, #FF7b47, #ff00ff);
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
