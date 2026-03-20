@@ -192,21 +192,26 @@ footer {
     text-align: center; /* garde le titre centré */
 }
 
-.youtube-video .video-container,
-.tiktok-video .video-container {
-    display: flex;
-    flex-wrap: wrap;      /* permet de passer à la ligne suivante si besoin */
-    justify-content: center;
-    gap: 15px;            /* espace entre les vidéos */
+/* YouTube : 2 vidéos par ligne */
+.youtube-video .video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+    gap: 20px;                             /* espace entre les vidéos */
+    justify-items: center;                 /* centre chaque vidéo dans sa colonne */
 }
 
-/* YouTube : 2 par 2 */
+/* Taille uniforme pour toutes les vidéos YouTube */
 .youtube-video iframe {
-    flex: 0 0 48%;        /* chaque vidéo prend ~50% du container */
-    max-width: 48%;       /* même largeur maximale */
-    height: 440px;        /* hauteur fixe */
+    width: 100%;        /* prend toute la colonne */
+    max-width: 640px;   /* largeur max fixe */
+    height: 440px;      /* hauteur fixe */
     border-radius: 15px;
     transition: 0.3s;
+}
+
+.youtube-video iframe:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ff00ff;
 }
 
 .youtube-video iframe:hover {
