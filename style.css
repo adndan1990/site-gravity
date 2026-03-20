@@ -298,3 +298,4 @@ body.about section p {
 body.about section p:hover {
     transform: translateY(-5px);      /* légère élévation */
     box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
