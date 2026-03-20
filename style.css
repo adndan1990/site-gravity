@@ -270,13 +270,19 @@ footer {
 }
 /* Paragraphes seulement dans le contenu (pas le footer) */
 body.home section p,
+body.about section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 body.about section p {
-    text-align: center;
-    margin-bottom: 25px;
-    line-height: 2;
+    text-align: center;         /* centre le texte à l'intérieur de la box */
     padding: 20px;
     border-radius: 12px;
-    color: #FF7b47; /* tu peux garder cette couleur pour le texte */
-    border: 2px solid #FF7b47; /* contour de la box */
+    color: #FF7b47;             /* couleur du texte */
+    border: 2px solid #FF7b47;  /* contour de la box */
     max-width: 700px;
+    line-height: 2;
 }
