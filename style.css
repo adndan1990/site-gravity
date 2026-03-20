@@ -204,7 +204,7 @@ footer {
 .youtube-video iframe {
     flex: 1 1 640px;      /* légèrement plus large pour YouTube */
     max-width: 760px;
-    height: 220px;
+    height: 440px;
     display: block;
     border-radius: 15px;
     transition: 0.3s;
