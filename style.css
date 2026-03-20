@@ -268,9 +268,13 @@ footer {
     color: #fff;
     border-color: #FFA65C;
 }
-/* Paragraphes seulement pour index et about */
 body.home p,
 body.about p {
-    margin-bottom: 25px; /* augmente l’espace */
-    line-height: 2;    /* texte plus aéré */
+    margin-bottom: 25px;
+    line-height: 2;
+    background-color: #FF7b47;
+    padding: 20px;
+    border-radius: 12px;
+    color: white; /* meilleur contraste */
+    max-width: 700px;
 }
