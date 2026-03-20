@@ -268,15 +268,14 @@ footer {
     color: #fff;
     border-color: #FFA65C;
 }
-/* Paragraphes seulement dans le contenu (pas le footer) */
 body.about section {
     display: flex;
-    flex-direction: column;       /* empile les boxes verticalement */
-    align-items: center;           /* centre horizontalement */
-    justify-content: center;       /* centre verticalement la section */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     margin: 0;
-    gap: 30px;                     /* espace entre les boxes */
+    gap: 80px; /* augmenté pour plus d'espace entre les boxes */
 }
 
 body.about section p {
@@ -288,8 +287,7 @@ body.about section p {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
-    
-    /* Style original */
+
     background-color: transparent;
     border: 3px solid #FF7b47;
     clip-path: polygon(
@@ -297,8 +295,28 @@ body.about section p {
         68% 57%, 79% 91%, 50% 70%, 
         21% 91%, 32% 57%, 2% 35%, 
         39% 35%
-    ); /* forme d'étoile */
+    );
     
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* hover pour un petit effet */
+body.about section p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+/* responsive pour petits écrans */
+@media (max-width: 600px) {
+    body.about section {
+        gap: 50px;
+    }
+
+    body.about section p {
+        max-width: 90%;
+        font-size: 1rem;
+        padding: 20px 25px;
+    }
 }
