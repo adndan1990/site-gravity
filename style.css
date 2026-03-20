@@ -281,7 +281,7 @@ body.about section {
 
 body.about section p {
     text-align: center;
-    padding: 40px 50px; /* plus de place pour le texte */
+    padding: 120px 150px; /* plus de place pour le texte */
     color: #FF7b47;
     max-width: 700px; /* plus large pour le texte */
     width: 100%;
