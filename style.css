@@ -271,31 +271,34 @@ footer {
 /* Paragraphes seulement dans le contenu (pas le footer) */
 body.about section {
     display: flex;
-    justify-content: center;       /* centre horizontalement */
-   
-    min-height: 100vh;             /* prend toute la hauteur de la page */
+    flex-direction: column;       /* empile les boxes verticalement */
+    align-items: center;           /* centre horizontalement */
+    justify-content: center;       /* centre verticalement la section */
+    min-height: 100vh;
     margin: 0;
+    gap: 30px;                     /* espace entre les boxes */
 }
 
 body.about section p {
-    text-align: center;            
-    padding: 30px 40px;            /* plus d’espace pour le texte */
-    border-radius: 20px;           
-    color: #FF7b47;                
-    border: 3px solid #FF7b47;     
-    max-width: 600px;
+    text-align: center;
+    padding: 30px 40px;
+    color: #FF7b47;
+    max-width: 500px;
     width: 100%;
-    line-height: 1.8;
-    
-    /* Effets stylisés */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* ombre douce */
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
+    line-height: 1.8;
+    
+    /* Style original */
+    background-color: transparent;
+    border: 3px solid #FF7b47;
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 
+        68% 57%, 79% 91%, 50% 70%, 
+        21% 91%, 32% 57%, 2% 35%, 
+        39% 35%
+    ); /* forme d'étoile */
+    
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Effet au survol pour rendre la box interactive */
-body.about section p:hover {
-    transform: translateY(-5px);      /* légère élévation */
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
