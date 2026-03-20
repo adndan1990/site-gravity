@@ -215,7 +215,7 @@ footer {
 
 /* TikTok : inchangé, responsive complet */
 .tiktok-video .tiktok-embed {
-    display: flex
+   display: grid; 
     flex: 1 1 325px;
     max-width: 500px;
     width: 100%;
