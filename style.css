@@ -271,6 +271,6 @@ footer {
 /* Paragraphes seulement pour index et about */
 body.home p,
 body.about p {
-    margin-bottom: 50px; /* augmente l’espace */
-    line-height: 3;    /* texte plus aéré */
+    margin-bottom: 25px; /* augmente l’espace */
+    line-height: 2;    /* texte plus aéré */
 }
