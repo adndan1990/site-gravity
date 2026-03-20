@@ -268,14 +268,15 @@ footer {
     color: #fff;
     border-color: #FFA65C;
 }
-body.home p,
-body.about p {
+/* Paragraphes seulement dans le contenu (pas le footer) */
+body.home section p,
+body.about section p {
     text-align: center;
     margin-bottom: 25px;
     line-height: 2;
     background-color: #FF7b47;
     padding: 20px;
     border-radius: 12px;
-    color: white; /* meilleur contraste */
+    color: white;
     max-width: 700px;
 }
