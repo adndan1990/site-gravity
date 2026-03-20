@@ -295,7 +295,7 @@ body.about section p {
     justify-content: center;
     min-height: 100vh;        /* occupe toute la hauteur de la page */
     padding: 40px 20px;
-    background-color: #f9f9f9; /* optionnel : fond clair pour la section */
+    background-color: black; /* optionnel : fond clair pour la section */
 }
 
 .contact-section p {
@@ -320,7 +320,7 @@ body.about section p {
     border: none;
     border-radius: 5px;
     background-color: #FF7b47;
-    color: white;
+    color: transparent;
     transition: background-color 0.3s;
 }
 
