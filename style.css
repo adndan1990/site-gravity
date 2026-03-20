@@ -77,6 +77,52 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
+    url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 65px;
+    color: #ff00ff;
+    text-shadow: 0 0 20px #ff00ff;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+/* BUTTON */
+button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #00f7ff, #ff00ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff00ff;
+}
+
 /* SECTIONS */
 section {
     padding: 80px 20px;
@@ -92,61 +138,45 @@ h2 {
     text-shadow: 0 0 10px #00f7ff;
 }
 
-/* PORTFOLIO */
-.portfolio .youtube-video,
-.portfolio .tiktok-video {
+/* SERVICES */
+.services {
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
 }
 
-.portfolio .youtube-video iframe {
+.card {
+    background: rgba(20,20,30,0.8);
+    padding: 30px;
+    width: 280px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 0 25px #00f7ff;
+}
+
+.card h3 {
+    color: #ff00ff;
+}
+
+/* PORTFOLIO */
+.portfolio iframe {
     width: 320px;
     height: 180px;
+    margin: 15px;
     border-radius: 15px;
     transition: 0.3s;
 }
 
-.portfolio .youtube-video iframe:hover {
+.portfolio iframe:hover {
     transform: scale(1.08);
     box-shadow: 0 0 30px #ff00ff;
-}
-
-.portfolio .tiktok-video .tiktok-embed {
-    max-width: 325px;
-    width: 100%;
-    border-radius: 15px;
-}
-
-/* PAGINATION BOUTONS PORTFOLIO */
-.portfolio .pagination {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.portfolio .pagination button {
-    margin: 0 10px;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #00f7ff, #ff00ff);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: 'Poppins', sans-serif;
-}
-
-.portfolio .pagination button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px #ff00ff;
-}
-
-.portfolio .pagination button.active {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px #ff00ff;
 }
 
 /* FOOTER */
@@ -155,13 +185,4 @@ footer {
     padding: 30px;
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .portfolio .youtube-video iframe,
-    .portfolio .tiktok-video .tiktok-embed {
-        width: 90%;
-        height: auto;
-    }
 }
