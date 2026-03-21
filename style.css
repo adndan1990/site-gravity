@@ -329,16 +329,20 @@ body.about section p {
 }
 .contact-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .contact-item p {
     margin: 0;
 }
 
+/* Boutons bien alignés */
 .btn {
+    margin-left: auto; /* pousse à droite */
+    width: 120px; /* largeur fixe = alignement parfait */
+    text-align: center;
+
     padding: 8px 12px;
     background: #333;
     color: white;
