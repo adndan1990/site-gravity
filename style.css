@@ -328,29 +328,18 @@ body.about section p {
     background-color: #e66a36; /* effet survol */
 }
 .contact-item {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
+    margin: 12px 0;
 }
 
-.contact-item p {
-    margin: 0;
-}
-
-/* Boutons bien alignés */
-.btn {
-    margin-left: auto; /* pousse à droite */
-    width: 120px; /* largeur fixe = alignement parfait */
-    text-align: center;
-
-    padding: 8px 12px;
-    background: #333;
-    color: white;
+.contact-item a {
     text-decoration: none;
-    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
     transition: 0.2s;
 }
 
-.btn:hover {
-    background: #555;
+/* effet hover propre */
+.contact-item a:hover {
+    color: #0077ff;
+    letter-spacing: 0.5px;
 }
