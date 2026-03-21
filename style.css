@@ -89,7 +89,7 @@ nav a:hover::after {
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
                       url('https://i.postimg.cc/jq8dNbmN/Design-sans-titre-13-removebg-preview.png');
     background-size: cover;
-    background-position: center center; /* centré horizontalement et verticalement */
+    background-position: center 40%; /* centre horizontalement, 40% verticalement */
     background-repeat: no-repeat;
 
     display: flex;
