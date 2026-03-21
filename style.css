@@ -288,6 +288,7 @@ body.about section p {
     font-family: 'montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
+    text-shadow: #ffe600;
 }
     .contact-section {
     display: flex;
