@@ -289,13 +289,11 @@ body.about section p {
     font-size: 1.2rem;
     line-height: 1.8;
 
-    /* effet de glow jaune */
+    /* effet de glow jaune plus subtil */
     text-shadow: 
-        0 0 5px #ffe600,
-        0 0 10px #ffe600,
-        0 0 15px #ffe600,
-        0 0 20px #ffe600,
-        0 0 30px #ffe600;
+        0 0 2px #ffe600,
+        0 0 4px #ffe600,
+        0 0 6px #ffe600;
 }
     .contact-section {
     display: flex;
