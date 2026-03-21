@@ -89,6 +89,7 @@ nav a:hover::after {
     url('https://i.postimg.cc/vZcq0W0h/Design-sans-titre-(13).png');
     background-size: cover;
     background-position: center;
+    background-color: #050507;
 
     display: flex;
     flex-direction: column;
